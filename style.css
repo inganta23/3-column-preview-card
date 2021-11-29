@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);  
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 90rem;
+    max-height: 51rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin: 5rem;
+}
+
+.card{
+    padding: 5%;
+    position: relative;
+}
+
+.yellow{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.blue{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.green{
+    background-color: hsl(179, 100%, 13%);
+}
+
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin: 3.5rem 0;
+}
+
+p{
+    font-size: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 2.5rem;
+    margin-bottom: 14.5rem;
+}
+
+
+.btn{
+    position: absolute;
+    top: 80%;
+    padding: 1.4rem 3.2rem;
+    border: none;
+    border-radius: 4rem;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+}
+
+.yellow .btn{
+    color: hsl(31, 77%, 52%);
+}
+
+.blue .btn{
+    color: hsl(184, 100%, 22%);
+}
+
+.green .btn{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: transparent;
+    border-color:#fff;
+}
+
+@media screen and (max-width: 676px){
+    body{
+        height: auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        max-height: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card{
+        padding: 6rem 8rem 6rem 5rem;
+    }
+
+    p{
+        margin-bottom: 3rem;
+    }
+
+    .btn{
+        position: static;
+        font-size: 1.5rem;
+    }
+
+}
+
+
